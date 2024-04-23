@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-canary-app
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-canary-app
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-canary-app
+    spec:
+      containers:
+        - name: canary
+          image: {{ .Values.canary.image }}
+          ports:
+            - containerPort: 5003
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          resources:
+            limits:
+              cpu: {{ .Values.cpuLimit }}
+              memory: {{ .Values.memoryLimit }}
