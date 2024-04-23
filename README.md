@@ -85,7 +85,7 @@ helm upgrade upcommerce ./upcommerce -n sre
 <img width="734" alt="image" src="https://github.com/aishwaryasarath/sre-week-four/assets/49971693/0a2b7639-bf6e-45a8-a938-006d93ab62b0">
 
 
-## In the event that the canary fails, shut it down and rollback to the previous stable condition of UpCommerce's deployment before the canary release.
+## Roll back to stable release in the event of canary failure
 
 Check deployment
 ```
