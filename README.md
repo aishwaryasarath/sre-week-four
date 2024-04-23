@@ -93,6 +93,7 @@ kubectl get deployment -n sre
 ```
 
 Or list the pod
+
 <img width="576" alt="image" src="https://github.com/aishwaryasarath/sre-week-four/assets/49971693/4a74e11b-5661-4235-bff7-49e688001e5b">
 
 
