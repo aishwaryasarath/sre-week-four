@@ -71,7 +71,7 @@ spec:
 
 ```
 
-Update values.yaml to append canary image from (dockerhub)[https://hub.docker.com/r/uonyeka/canary/tags]
+Update values.yaml to append canary image from [dockerhub](https://hub.docker.com/r/uonyeka/canary/tags)
 ```
 canary:
   image: uonyeka/canary:linux-amd64
